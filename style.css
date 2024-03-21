@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Custom classes for colors */
+.bg-blue { background-color: #fcfdfd; }
+.bg-red { background-color: #03152c; }
+.bg-gray { background-color: #25282c; }
+.text-blue { color: #3490dc; }
+.text-red { color: #e3342f; }
+.text-gray { color: #718096; }
+
+/* Custom logo styles */
+.logo {
+  height: 50px; /* Adjust as needed */
+  width: auto; /* Adjust as needed */
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 56px;
+  color: #fcfdfd;
+  margin-bottom: 20px;
+}
+
+nav {
+  border-bottom: 5px solid #8e1c1c;
+  box-shadow: inset 0 -1px 0 0 #8e1c1c;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.carousel-item {
+  height: 85vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item-1 {
+  background-image: url('./assets/close-up-delivery-person-giving-parcel-client.jpg');
+}
+
+.item-2 {
+  background-image: url('./assets/outsourcing.jpg');
+}
+
+.item-3 {
+  background-image: url('./assets/trucking-company.webp');
+}
+
+.carousel-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 36, 36, 0.75);
+  padding-top: -30px;
+}
+
+.carousel-item div p {
+  color: #fcfdfd;
+  font-size: 18px;
+  max-width: 900px;
+}
+
+.font-size-medium {
+  font-size: 24px;
+}
+
+.iframe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+}
+
+.iframe iframe {
+  height: 100%;
+  width: 100%;
+}
