@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* Custom classes for colors */
@@ -156,6 +157,19 @@ nav {
   background-repeat: no-repeat;
 }
 
+.item {
+  background-image: url('./assets/Hazard-ION-04292021.webp');
+  background-position: top;
+}
+
+.carousel-item strong {
+  color: #cd2f2a;
+}
+
+.item-0 {
+  background-image: url('./assets/portrait-adult-male-preparing-medical-treatment.jpg');
+}
+
 .item-1 {
   background-image: url('./assets/close-up-delivery-person-giving-parcel-client.jpg');
 }
@@ -175,14 +189,15 @@ nav {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: rgba(36, 36, 36, 0.75);
+  background: rgba(4, 12, 24, 0.75);
   padding-top: -30px;
 }
 
 .carousel-item div p {
   color: #fcfdfd;
-  font-size: 18px;
+  font-size: 24px;
   max-width: 900px;
+  text-align: center;
 }
 
 .font-size-medium {
@@ -241,6 +256,39 @@ nav {
 
 .more-details strong {
   color: #e3342f;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fcfdfd;
+}
+
+.products img {
+  width: 250px;
+}
+
+.partner {
+  background: #fcfdfd;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 80px;
+}
+
+.partner p {
+  font-size: 32px;
+  color: #03152c;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.partner img {
+  width: 450px;
 }
 
 .iframe {

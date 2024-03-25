@@ -14,28 +14,38 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
   </head>
-  <body class="bg-gray text-gray">
+  <body class="bg-gray text-gray" data-spy="scroll" data-target="#navbar-example" data-offset="100">
     <header class="bg-blue">
         <nav class="flex items-end justify-between px-8 py-2">
             <span><img src="assets/logo-2-1.jpg" alt="logo" class="logo"></span>
             <ul class="flex">
-                <li><a href="#" class="text-red-500 mr-4 poppins-medium">Home</a></li>
-                <li><a href="#" class="text-red-500 mr-4 poppins-medium">Services</a></li>
-                <li><a href="#" class="text-red-500 mr-4 poppins-medium">Partners</a></li>
-                <li><a href="#" class="text-red-500 mr-4 poppins-medium">Contact Information</a></li>
+                <li><a href="#home" class="text-red-500 mr-4 poppins-medium">Home</a></li>
+                <li><a href="#services" class="text-red-500 mr-4 poppins-medium">Services</a></li>
+                <li><a href="#products" class="text-red-500 mr-4 poppins-medium">Products</a></li>
+                <li><a href="#contact-details" class="text-red-500 mr-4 poppins-medium">Contact Information</a></li>
             </ul>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls home" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active item-1">
+            <div class="carousel-item active item">
               <div>
                 <h1 class="poppins-extrabold" id="typing-text"></h1>
-                <p class="poppins-medium">The premier transportation solution in South Africa, dedicated to the swift and secure delivery of sensitive like nuclear industrial equipment, Oil and Gas as well as personal packages.</p>
+                <p class="poppins-medium">The premier transportation solution in South Africa, dedicated to the swift and secure delivery of <strong>hazardous </strong>☢️ products like nuclear industrial equipment, Oil and Gas.</p>
+              </div>
+            </div>
+            <div class="carousel-item item-0">
+              <div>
+                <p class="poppins-medium">Wardmac supply an extensive range of products, catering to diverse needs including <strong>nuclear protective clothing, valves, pumps</strong>, and various industrial equipment. Our offerings ensure top-notch quality, reliability, and safety, meeting the stringent requirements of modern industries.</p>
+              </div>
+            </div>
+            <div class="carousel-item item-1">
+              <div>
+                <p class="poppins-medium">We also transport personal products as part of our comprehensive service offerings, ensuring the safe and timely delivery of your belongings.</p>
               </div>
             </div>
             <div class="carousel-item item-2">
               <div>
-                <p class="poppins-medium font-size-medium text-lg">Experience hassle-free package delivery with our comprehensive outsourcing service. Simply provide us with the pickup location and drop zone, and we'll take care of everything else, from logistics to timely delivery. With our seamless process, your package will swiftly reach its destination without any worries or stress on your end. Say goodbye to the complexities of shipping logistics and let us handle it for you, so you can focus on what matters most.</p>
+                <p class="poppins-medium font-size-medium text-lg">Experience stress-free package delivery with our full-service outsourcing. Just share the pickup and drop-off locations, and we'll manage the rest. From logistics to on-time delivery, we've got you covered. Say farewell to shipping hassles and concentrate on what truly matters.</p>
               </div>
             </div>
             <div class="carousel-item item-3">
@@ -59,24 +69,34 @@
         <div class="values">
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Reliability</h3>
-            <p>At <strong>Wardmac</strong> prioritize reliability in delivering goods or services on time and in optimal condition. Clients depend on timely deliveries to maintain their own operations, and reliability builds trust and long-term relationships.</p>
+            <p class="fade-left">At <strong>Wardmac</strong> prioritize reliability in delivering goods or services on time and in optimal condition. Clients depend on timely deliveries to maintain their own operations, and reliability builds trust and long-term relationships.</p>
           </div>
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Safety</h3>
-            <p>Safety is a paramount value for a <strong>Wardmac</strong>, ensuring that both clients' goods and the public are protected during transit. This includes maintaining well-maintained vehicles, adhering to safety regulations, and implementing rigorous safety protocols to minimize accidents and hazards.</p>
+            <p class="fade-left">Safety is a paramount value for a <strong>Wardmac</strong>, ensuring that both clients' goods and the public are protected during transit. This includes maintaining well-maintained vehicles, adhering to safety regulations, and implementing rigorous safety protocols to minimize accidents and hazards.</p>
           </div>
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Efficiency</h3>
             <p>We strive to streamline operations, utilize advanced logistics technologies, and employ efficient route planning to maximize productivity and minimize delays, ultimately providing cost-effective and timely solutions to clients' transportation needs.</p>
           </div>
         </div>
-        <div class="more-details">
+        <div class="more-details" id="services">
           <h2 class="poppins-bold">Our Expertise</h2>
-          <p>Founded in 2013, prides itself on delivering exceptional <strong>transportation services</strong> tailored to specialized and sensitive products for industries such as <strong>nuclear, power generation, and Oil and Gas</strong>. With a deep understanding of the intricacies of these sectors, Wardmac ensures the safe and secure transport of goods, emphasizing precision and care in every step of the process. Our expertise extends beyond transportation logistics, encompassing comprehensive solutions that meet the unique needs and challenges of each industry we serve. Trust Wardmac for reliable, safe, and efficient transportation services that exceed expectations.</p>
+          
+          <p>Established in 2013, Wardmac specializes in delivering superior <strong>transportation services tailored to handle hazardous and sensitive products</strong> across various industries. In addition to transportation, we offer a wide range of industrial products, including those for <strong>nuclear, power generation, Oil and Gas</strong>  sectors. Our commitment lies in ensuring the secure and safe transport of goods, prioritizing precision and care at every stage of the process.Our profound understanding of these industries enables us to provide comprehensive solutions that address their unique needs and challenges. Beyond logistics, we strive to exceed expectations by delivering reliable, safe, and efficient transportation services.</p>
         </div>
       </div>
+      <div class="products" id="products">
+        <img src="assets/chemical-industrial-Sintered-Metal-Filter-2.jpg" alt="" srcset="">
+        <img src="assets/pumps.jpg" alt="">
+        <img src="assets/valves.jpg" alt="">
+        <img src="assets/Hbacd9c840e11433c8d6918921e26ecd5j.jpg_300x300.avif" alt="">
+        <img src="assets/shok.jpg" alt="">
+        <img src="assets/bolt.jpg" alt="">
+      </div>
+      <div class="partner"><p>Wardmac, the official African partner and package handler for MDS </p><img src="assets/logo.svg" alt=""></div>
     </main>
-    <div class="iframe cape-town">
+    <div class="iframe cape-town" id="contact-details">
       <div class="contact-details">
         <div class="location">
           <i class="fa-solid fa-location-dot"></i>
@@ -97,7 +117,7 @@
           <i class="fa-solid fa-envelope"></i>
           <div>
             <h4 class="poppins-semibold">Email Us:</h4>
-            <a href="http://" target="_blank" rel="noopener noreferrer">sales@wardmac.co.za</a>
+            <a href="mailto:sales@wardmac.co.za">sales@wardmac.co.za</a>
           </div>
         </div>
       </div>
@@ -123,7 +143,7 @@
           <i class="fa-solid fa-envelope"></i>
           <div>
             <h4 class="poppins-semibold">Email Us:</h4>
-            <a href="http://" target="_blank" rel="noopener noreferrer">sales@wardmac.co.za</a>
+            <a href="mailto:sales@wardmac.co.za">sales@wardmac.co.za</a>
           </div>
         </div>
       </div>
