@@ -17,12 +17,17 @@
   <body class="bg-gray text-gray" data-spy="scroll" data-target="#navbar-example" data-offset="100">
     <header class="bg-blue">
         <nav class="flex items-end justify-between px-8 py-2">
-            <span><img src="assets/logo-2-1.jpg" alt="logo" class="logo"></span>
-            <ul class="flex">
-                <li><a href="#home" class="text-red-500 mr-4 poppins-medium">Home</a></li>
-                <li><a href="#services" class="text-red-500 mr-4 poppins-medium">Services</a></li>
-                <li><a href="#products" class="text-red-500 mr-4 poppins-medium">Products</a></li>
-                <li><a href="#contact-details" class="text-red-500 mr-4 poppins-medium">Contact Information</a></li>
+          <span><img src="assets/logo-2-1.jpg" alt="logo" class="logo"></span> 
+          <button class="menu-bars" id="menu-bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+            <ul class="flex menu-items" id="menu-items">
+                <li><a href="#home" class="text-red-500 mr-4 poppins-medium menu-item">Home</a></li>
+                <li><a href="#services" class="text-red-500 mr-4 poppins-medium menu-item">Services</a></li>
+                <li><a href="#products" class="text-red-500 mr-4 poppins-medium menu-item">Products</a></li>
+                <li><a href="#contact-details" class="text-red-500 mr-4 poppins-medium menu-item">Contact Information</a></li>
             </ul>
         </nav>
         <div id="carouselExampleControls home" class="carousel slide" data-bs-ride="carousel">
@@ -54,14 +59,14 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
     </header>
     <main>
@@ -69,15 +74,15 @@
         <div class="values">
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Reliability</h3>
-            <p class="fade-left">At <strong>Wardmac</strong> prioritize reliability in delivering goods or services on time and in optimal condition. Clients depend on timely deliveries to maintain their own operations, and reliability builds trust and long-term relationships.</p>
+            <p class="fade-in-up">At <strong>Wardmac</strong> prioritize reliability in delivering goods or services on time and in optimal condition. Clients depend on timely deliveries to maintain their own operations, and reliability builds trust and long-term relationships.</p>
           </div>
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Safety</h3>
-            <p class="fade-left">Safety is a paramount value for a <strong>Wardmac</strong>, ensuring that both clients' goods and the public are protected during transit. This includes maintaining well-maintained vehicles, adhering to safety regulations, and implementing rigorous safety protocols to minimize accidents and hazards.</p>
+            <p class="fade-in-up">Safety is a paramount value for a <strong>Wardmac</strong>, ensuring that both clients' goods and the public are protected during transit. This includes maintaining well-maintained vehicles, adhering to safety regulations, and implementing rigorous safety protocols to minimize accidents and hazards.</p>
           </div>
           <div class="value">
             <h3 class="poppins-semibold text-red-500">Efficiency</h3>
-            <p>We strive to streamline operations, utilize advanced logistics technologies, and employ efficient route planning to maximize productivity and minimize delays, ultimately providing cost-effective and timely solutions to clients' transportation needs.</p>
+            <p class="fade-in-up">We strive to streamline operations, utilize advanced logistics technologies, and employ efficient route planning to maximize productivity and minimize delays, ultimately providing cost-effective and timely solutions to clients' transportation needs.</p>
           </div>
         </div>
         <div class="more-details" id="services">

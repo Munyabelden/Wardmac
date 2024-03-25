@@ -1,15 +1,22 @@
-'useStrict'
+const menuBar = document.querySelector('#menu-bars');
+const menuItems = document.querySelector('#menu-items');
+const menuItem = document.querySelectorAll('.menu-item');
+const elements = document.querySelectorAll('.fade-in-up');
 
-// Text content for typing effect
+menuBar.addEventListener('click', () => {
+  menuItems.classList.toggle('render');
+})
+
+menuItem.forEach((item) => {
+  item.addEventListener('click', () => menuItems.classList.toggle('render'));
+})
+
 const textToType = "Welcome to Wardmac";
 
-// Speed of typing in milliseconds
 const typingSpeed = 100;
 
-// Index to keep track of characters
 let charIndex = 0;
 
-// Function to simulate typing effect
 function typeEffect() {
   const text = textToType.slice(0, ++charIndex);
   document.getElementById('typing-text').textContent = text;
@@ -18,7 +25,23 @@ function typeEffect() {
   }
 }
 
-// Start typing effect when the page loads
 window.onload = function() {
   typeEffect();
 };
+
+function fadeInUpElements() {
+  elements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener("scroll", () => {
+  fadeInUpElements();
+});
+
+fadeInUpElements();
