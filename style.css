@@ -266,6 +266,11 @@ nav {
   color: #cd2f2a;
 }
 
+.carousel-item h2 {
+  background: none;
+  color: #fcfdfd;
+}
+
 .item-0 {
   background-image: url('./assets/portrait-adult-male-preparing-medical-treatment.jpg');
 }
