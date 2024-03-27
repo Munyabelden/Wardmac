@@ -407,18 +407,45 @@ h2 {
   padding-inline: 15%;
   padding-bottom: 50px;
 }
-
-.products img {
-  width: 250px;
-  margin-inline: 10px;
+.products div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin-block: 20px;
+  margin-inline: 10px;
+  border: 1.5px solid #61656a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 275px;
+  height: 300px;
 }
 
-.products span {
+.products img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+.products p {
   font-size: 18px;
   text-align: center;
   font-weight: 500;
   color: #30373d;
+  background: #f4f4f5;
+  width: 100%;
+  padding: 15px auto;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
 }
 
 .partner {
