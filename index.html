@@ -11,17 +11,19 @@
     <title>Wardmac | PTY LTD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
   </head>
   <body class="bg-gray text-gray" data-spy="scroll" data-target="#navbar-example" data-offset="100">
     <header class="bg-blue">
-        <nav class="flex items-end justify-between px-8 py-2">
+        <nav class="flex flex-column justify-between">
           <span><img src="assets/logo-2-1.jpg" alt="logo" class="logo"></span> 
-          <button class="menu-bars" id="menu-bars">
+          <button type="button" class="menu-bars" id="menu-bars">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
+            <span class="sr-only">menu</span>
           </button>
             <ul class="flex menu-items" id="menu-items">
                 <li><a href="#home" class="text-blue-900 mr-4 poppins-medium menu-item">Home</a></li>
@@ -30,52 +32,44 @@
                 <li><a href="#contact-details" class="text-blue-900 mr-4 poppins-medium menu-item">Contact Information</a></li>
             </ul>
         </nav>
-        <div id="myCarousel home" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active item" data-interval="10000">
-              <div>
-                <h1 class="poppins-extrabold" id="typing-text"></h1>
-                <p class="poppins-medium">Transportation of <strong>hazardous</strong>☢️ products & </p>
-              </div>
+        <div class="carousel-inner">
+          <div class="header-item">
+            <div>
+              <h1 class="poppins-extrabold" id="typing-text"></h1>
+              <ul>
+                <li><p class="poppins-medium">Transportation of <strong>hazardous</strong>☢️ products</p></li>
+                <li><p class="poppins-medium">Supply nuclear and industrial products</p></li>
+              </ul>
             </div>
-            <div class="carousel-item item-0" data-interval="15000">
-              <div>
-                <h2 class="poppins-extrabold">Supply nuclear and industrial products.</h2>
-                <p class="poppins-medium">Nuclear protective clothing, valves, pumps</strong>, and various industrial equipment.</p>
-              </div>
-            </div>
-            <!-- <div class="carousel-item item-1">
-              <div>
-                <p class="poppins-medium">We also transport personal products as part of our comprehensive service offerings, ensuring the safe and timely delivery of your belongings.</p>
-              </div>
-            </div>
-            <div class="carousel-item item-2">
-              <div>
-                <p class="poppins-medium font-size-medium text-lg">Experience stress-free package delivery with our full-service outsourcing. Just share the pickup and drop-off locations, and we'll manage the rest. From logistics to on-time delivery, we've got you covered. Say farewell to shipping hassles and concentrate on what truly matters.</p>
-              </div>
-            </div>
-            <div class="carousel-item item-3">
-              <div>
-                <p class="poppins-medium">The premier transportation solution in South Africa, dedicated to the swift and secure delivery of sensitive industrial equipment and personal packages.</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
-        </div>
+          </div>
     </header>
     <main>
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/chemical-industrial-Sintered-Metal-Filter-2.jpg" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="assets/bolt.jpg" alt="Image 2"></div>
+          <div class="swiper-slide"><img src="assets/valves.jpg" alt="Image 3"></div>
+          <div class="swiper-slide"><img src="assets/shok.jpg" alt="Image 4"></div>
+          <div class="swiper-slide"><img src="assets/Hbacd9c840e11433c8d6918921e26ecd5j.jpg_300x300.avif" alt="Image 5"></div>
+          <div class="swiper-slide"><img src="assets/valves.jpg" alt="Image 6"></div>
+          <div class="swiper-slide"><img src="assets/pumps.jpg" alt="Image 6"></div>
+          <div class="swiper-slide"><img src="assets/chemical-industrial-Sintered-Metal-Filter-2.jpg" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="assets/bolt.jpg" alt="Image 2"></div>
+          <div class="swiper-slide"><img src="assets/valves.jpg" alt="Image 3"></div>
+          <div class="swiper-slide"><img src="assets/shok.jpg" alt="Image 4"></div>
+          <div class="swiper-slide"><img src="assets/Hbacd9c840e11433c8d6918921e26ecd5j.jpg_300x300.avif" alt="Image 5"></div>
+          <div class="swiper-slide"><img src="assets/valves.jpg" alt="Image 6"></div>
+          <div class="swiper-slide"><img src="assets/pumps.jpg" alt="Image 6"></div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+    </section>
+   
       <div class="about-us">
         <div class="more-details" id="services">
-          <h2 class="poppins-bold">Transportation of hazardous products/equipment & <br> Supplier of nuclear and industrial products</h2>
-          
-          <p>Established in 2013, Wardmac specializes in delivering superior <strong>transportation services tailored to handle hazardous and sensitive products</strong> across various industries. In addition to transportation, we offer a wide range of industrial products, including those for <strong>nuclear, power generation, Oil and Gas</strong>  sectors. Our commitment lies in ensuring the secure and safe transport of goods, prioritizing precision and care at every stage of the process.Our profound understanding of these industries enables us to provide comprehensive solutions that address their unique needs and challenges. Beyond logistics, we strive to exceed expectations by delivering reliable, safe, and efficient transportation services.</p>
+          <h2 class="poppins-bold">Transportation of hazardous products/equipment & <br>
+          <p class="poppins-light">Established in 2013, Wardmac specializes in delivering superior <strong class="poppins-bold">transportation services tailored to handle hazardous and sensitive products</strong> across various industries. In addition to transportation, we offer a wide range of industrial products, including those for <strong class="poppins-bold">nuclear, power generation, Oil and Gas</strong>  sectors. Our commitment lies in ensuring the secure and safe transport of goods, prioritizing precision and care at every stage of the process.Our profound understanding of these industries enables us to provide comprehensive solutions that address their unique needs and challenges. Beyond logistics, we strive to exceed expectations by delivering reliable, safe, and efficient transportation services.</p>
         </div>
         <!-- <div class="values">
           <div class="value">
@@ -175,5 +169,22 @@
     </footer>
     <!-- Bootstrap JS (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+</script>
   </body>
 </html>

@@ -15,10 +15,14 @@
 .text-red { color: #e3342f; }
 .text-gray { color: #2b2e34; }
 
-/* Custom logo styles */
-.logo {
-  height: 50px; /* Adjust as needed */
-  width: auto; /* Adjust as needed */
+body {
+  overflow-x: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  display: none;
+  visibility: hidden;
 }
 
 .menu-bars {
@@ -181,6 +185,16 @@ h1 {
   text-align: center;
 }
 
+h1::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 150%;
+  background: #55585d;
+  height: 2px;
+  margin-block: 20px;
+}
+
 h2 {
   width: 100%;
   background: #fcfdfd;
@@ -192,9 +206,32 @@ h2 {
 }
 
 .logo {
-  width: 200px;
+  justify-self: center;
+  width: 250px;
   height: auto;
-  margin-left: 40px;
+  margin-block: 15px;
+  margin-left: 8%;
+}
+
+nav {
+  background: rgb(250, 252, 255);
+}
+
+.menu-items {
+  width: 100%;
+  background: rgb(35, 37, 39);
+  padding-block: 15px;
+  padding-left: 8%;
+  justify-content: end;
+}
+
+.menu-items li {
+  margin-right: 50px;
+}
+
+.menu-item {
+  color: #f4f4f5;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -208,7 +245,7 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: rgba(8, 21, 41, 0.75);
+    background: rgba(23, 23, 24, 0.75);
     backdrop-filter: blur(5px);
     -o-transform: translateY(-100%);
     -o-transition: all 400ms ease-in-out;
@@ -242,7 +279,7 @@ h2 {
   .menu-item {
     font-size: 22px;
     font-weight: 600;
-    color: rgb(236, 39, 39);
+    color: rgb(233, 236, 242);
   }
 
   h2 {
@@ -250,60 +287,45 @@ h2 {
   }
 }
 
-.carousel-item {
-  height: 85vh; /* Adjust the height as needed */
+.header-item {
+  height: 60vh; /* Adjust the height as needed */
   background-size: cover;
   background-position: center;
-}
-
-.carousel-item {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-image: url('./assets/biohazard_1189792.png');
+  background-position: right center;
 }
 
-.item {
-  background-image: url('./assets/Hazard-ION-04292021.webp');
-  background-position: top;
+.header-item strong {
+  color: #ba5351;
 }
 
-.carousel-item strong {
-  color: #cd2f2a;
-}
-
-.carousel-item h2 {
+.header-item h2 {
   background: none;
   color: #fcfdfd;
 }
 
-.item-0 {
-  background-image: url('./assets/nuclear.jpg');
-}
-
-.item-1 {
-  background-image: url('./assets/close-up-delivery-person-giving-parcel-client.jpg');
-}
-
-.item-2 {
-  background-image: url('./assets/outsourcing.jpg');
-}
-
-.item-3 {
-  background-image: url('./assets/trucking-company.webp');
-}
-
-.carousel-item div {
+.header-item div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: rgba(4, 12, 24, 0.75);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 16, 16), rgba(131, 17, 17),  rgba(131, 17, 17, 0.8));;
   padding-top: -30px;
+  padding-left: 8%;
 }
 
-.carousel-item div p {
+.header-item div li {
+  list-style: disc;
+  color: #f4f4f5;
+  margin-left: 10px;
+}
+
+.header-item div p {
   color: #fcfdfd;
   font-size: 24px;
   max-width: 900px;
@@ -324,15 +346,42 @@ h2 {
   padding-inline: 5%;
 }
 
+.about-us p {
+  fo
+}
+
 @media (max-width: 1100px) {
   h1 {
-    font-size: 44px;
+    font-size: 36px;
   }
 
-  .carousel-item div p {
+  .header-item div p {
     font-size: 20px;
-    margin-inline: 10%;
   }
+}
+
+main {
+  background: #fcfdfd;
+}
+
+.swiper-container {
+  width: 120%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  text-align: center;
+  margin-inline: 20px;
+}
+
+img {
+  width: 100px;
+  height: auto;
 }
 
 .values {
@@ -375,14 +424,23 @@ h2 {
 }
 
 .more-details p {
-  font-size: 17px;
+  margin-top: 30px;
+  font-size: 16px;
 }
 
 .more-details strong {
-  color: #e3342f;
+  color: #99332f;
 }
 
 @media (max-width: 950px) {
+  .swiper-container {
+    padding-top: 90px;
+  }
+  .swiper-slide {
+    width: 200px;
+    margin-inline: 0;
+  }
+
   .values {
     flex-direction: column;
     gap: 30px
