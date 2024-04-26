@@ -189,9 +189,9 @@ h1::after {
   content: '';
   display: block;
   position: relative;
-  width: 150%;
+  width: 100%;
   background: #55585d;
-  height: 2px;
+  height: 1px;
   margin-block: 20px;
 }
 
@@ -288,14 +288,7 @@ nav {
 }
 
 .header-item {
-  height: 60vh; /* Adjust the height as needed */
-  background-size: cover;
-  background-position: center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url('./assets/biohazard_1189792.png');
-  background-position: right center;
+  height: 60vh;
 }
 
 .header-item strong {
@@ -307,16 +300,24 @@ nav {
   color: #fcfdfd;
 }
 
-.header-item div {
+.header-item > div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 16, 16), rgba(131, 17, 17),  rgba(131, 17, 17, 0.8));;
-  padding-top: -30px;
-  padding-left: 8%;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(22, 6, 6), rgb(69, 16, 16),  rgba(131, 17, 17));;
+  padding-block: 70px 40px;
+  padding-inline: 3%;
+  z-index: 100;
+}
+
+.header-item > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .header-item div li {
@@ -330,6 +331,41 @@ nav {
   font-size: 24px;
   max-width: 900px;
   text-align: center;
+}
+
+.hazard,
+.supply {
+  height: 20rem;
+  width: 40rem;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-position: top right;
+}
+
+.hazard {
+  background-image: url(assets/Hazard-ION-04292021.webp);
+}
+
+.supply {
+  background-image: url(assets/nuclear.jpg);
+}
+
+.hazard p,
+.supply p {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -o-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  padding-inline: 5px;
 }
 
 .font-size-medium {
@@ -347,7 +383,7 @@ nav {
 }
 
 .about-us p {
-  fo
+
 }
 
 @media (max-width: 1100px) {
@@ -382,31 +418,6 @@ main {
 img {
   width: 100px;
   height: auto;
-}
-
-.values {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-block: 60px;
-  margin-inline: auto;
-  max-width: 900px;
-}
-
-.value {
-  margin-right: 40px;
-  border-left: 3px solid #e3342f;
-  padding-left: 30px;
-}
-
-.value h3 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.value strong {
-  color: #04244f;
 }
 
 .more-details {
