@@ -221,7 +221,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 60%;
-  background: linear-gradient(to right, transparent, rgba(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), transparent);
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), transparent);
   padding-block: 15px;
   padding-left: 8%;
   padding-right: 10%;
