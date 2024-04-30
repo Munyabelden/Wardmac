@@ -206,27 +206,23 @@ h2 {
 }
 
 .logo {
+  justify-self: center;
   width: 250px;
   height: auto;
   margin-block: 15px;
-  margin-inline: 10%;
+  margin-left: 8%;
 }
 
 nav {
-  background: linear-gradient(to right, rgb(10, 4, 4), rgb(43, 10, 10), rgb(124, 32, 32),  rgb(145, 25, 25));
-  padding-inline: 5%;
+  background:  rgb(22, 6, 6);
 }
 
 .menu-items {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  background: linear-gradient(to right, transparent, rgba(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), rgb(10, 13, 19, 0.5), transparent);
+  width: 100%;
+  background: rgb(35, 37, 39);
   padding-block: 15px;
   padding-left: 8%;
-  padding-right: 10%;
-  justify-content: flex-end;
-  margin-right: -50px;
+  justify-content: end;
 }
 
 .menu-items li {
@@ -292,7 +288,7 @@ nav {
 }
 
 .header-item {
-  height: 65vh;
+  height: 60vh;
 }
 
 .header-item strong {
@@ -311,7 +307,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgb(10, 4, 4), rgb(43, 10, 10), rgb(124, 32, 32),  rgb(145, 25, 25));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(22, 6, 6), rgb(69, 16, 16),  rgba(131, 17, 17));
   padding-block: 70px 40px;
   padding-inline: 3%;
   z-index: 100;
