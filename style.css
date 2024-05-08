@@ -213,7 +213,7 @@ h2 {
 }
 
 nav {
-  background: linear-gradient(to right, rgb(10, 4, 4), rgb(43, 10, 10), rgb(124, 32, 32),  rgb(145, 25, 25));
+  background: linear-gradient(to right, rgb(24, 13, 13), rgb(93, 43, 43), rgb(164, 55, 55),  rgb(222, 55, 55));
   padding-inline: 5%;
 }
 
@@ -311,7 +311,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgb(10, 4, 4), rgb(43, 10, 10), rgb(124, 32, 32),  rgb(145, 25, 25));
+  background: linear-gradient(to right, rgb(24, 13, 13), rgb(93, 43, 43), rgb(164, 55, 55),  rgb(222, 55, 55));
   padding-block: 70px 40px;
   padding-inline: 3%;
   z-index: 100;
@@ -629,5 +629,4 @@ footer {
   section.address {
     flex-direction: column;
   }
-
 }
