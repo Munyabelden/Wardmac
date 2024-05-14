@@ -11,7 +11,7 @@ menuItem.forEach((item) => {
   item.addEventListener('click', () => menuItems.classList.toggle('render'));
 })
 
-const textToType = "Welcome to Wardmac";
+const textToType = "Accelerated Services";
 
 const typingSpeed = 100;
 

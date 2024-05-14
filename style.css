@@ -179,20 +179,9 @@ body {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 20px;
   color: #fcfdfd;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-h1::after {
-  content: '';
-  display: block;
-  position: relative;
-  width: 100%;
-  background: #55585d;
-  height: 1px;
-  margin-block: 20px;
+  text-align: start;
 }
 
 h2 {
@@ -206,21 +195,38 @@ h2 {
 }
 
 .logo {
-  width: 250px;
+  width: 190px;
   height: auto;
   margin-block: 15px;
   margin-inline: 10%;
 }
 
 nav {
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(187, 64, 64), rgb(221, 69, 69),  rgb(246, 35, 35));
+  background: linear-gradient(to right, rgb(239, 53, 53), rgb(122, 60, 59), rgb(0, 0, 0));
   padding-inline: 5%;
+}
+
+nav span p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.header-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(239, 53, 53), rgb(122, 60, 59), rgb(0, 0, 0));
+  padding-block: 80px 0;
+  z-index: 100;
 }
 
 .menu-items {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 50%;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), transparent);
   padding-block: 15px;
   padding-left: 8%;
@@ -235,7 +241,7 @@ nav {
 
 .menu-item {
   color: #f4f4f5;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media (max-width: 768px) {
@@ -292,29 +298,11 @@ nav {
 }
 
 .header-item {
-  height: 65vh;
+  height: 58vh;
 }
 
 .header-item strong {
   color: #ba5351;
-}
-
-.header-item h2 {
-  background: none;
-  color: #fcfdfd;
-}
-
-.header-item > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(187, 64, 64), rgb(221, 69, 69),  rgb(246, 35, 35));
-  padding-block: 70px 40px;
-  padding-inline: 3%;
-  z-index: 100;
 }
 
 .header-item > div > div {
@@ -325,47 +313,42 @@ nav {
   gap: 10px
 }
 
-.header-item div li {
-  list-style: disc;
-  color: #f4f4f5;
-  margin-left: 10px;
-}
-
 .header-item div p {
   color: #fcfdfd;
   font-size: 24px;
   max-width: 900px;
-  text-align: center;
 }
 
 .hazard,
 .supply {
-  height: 20rem;
+  height: 19rem;
   width: 40rem;
   -o-border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  background-position: top right;
+  background-position: center;
+  background-size: cover;
 }
 
 .hazard {
-  background-image: url(assets/Hazard-ION-04292021.webp);
+  background-image: url(assets/coronavirus-vaccine-composition-lab.jpg);
 }
 
 .supply {
-  background-image: url(assets/nuclear.jpg);
+  background-image: url(assets/view-nuclear-power-plant-with-towers-letting-out-steam-from-process\ \(1\).jpg);
 }
 
 .hazard p,
 .supply p {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  -o-border-radius: 15px;
+  justify-content: center;
+  -o-border-radius: 10px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -383,7 +366,7 @@ nav {
   width: 100%;
   height: 100%;
   background: #fcfdfd;
-  padding-block: 100px;
+  padding-block: 50px;
   padding-inline: 5%;
 }
 
@@ -550,8 +533,15 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-block: 80px;
+  padding-block: 20px 80px;
   padding-inline: 5%;
+}
+
+.partner-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
 .partner p {
@@ -563,22 +553,27 @@ img {
 }
 
 .partner img {
-  width: 450px;
+  width: 250px;
 }
 
 section.address {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   width: 100%;
-  padding: 30px 5%;
+  padding: 50px 5%;
   color: #c6c8cb;
 }
 
 section.address h2 {
   font-weight: bold;
+}
+
+section.address div img {
+  width: 200px;
+  height: auto;
 }
 
 .contact-details>div {
@@ -605,13 +600,14 @@ section.address h2 {
   color: #955350;
 }
 
-.joburg {
-  margin-inline: 0;
+.footer-p {
+  color: #c1c3c6;
+  font-size: 14px;
+  width: 50%;
 }
 
-.joburg .contact-details i {
-  font-size: 22px;
-  color: #2d4c76;
+.footer-p p {
+  margin-top: 20px;
 }
 
 footer {
@@ -628,5 +624,120 @@ footer {
 @media (max-width: 1250px) {
   section.address {
     flex-direction: column;
+  }
+}
+
+/* Services */
+
+.supplys {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-inline: 5%;
+  padding-block: 100px 40px;
+  background: #fff;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+
+.supplys div {
+  background: #2d3237;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.supplys div h2 {
+  background: transparent;
+  color: #fff;
+}
+
+.supplys div p {
+  max-width: 450px;
+  text-align: center;
+}
+
+.nuclear-supply {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  padding-top: 40px;
+  width: 100%;
+  height: 70vh;
+}
+
+.nuclear-supply img,
+.nuclear-transport img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nuclear-supply div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  background: rgba(245, 245, 255, 0.75);
+  padding-block: 50px;
+  padding-inline: 40px;
+  width: 50%;
+  font-size: 15px;
+  color: #2f2f30;
+}
+
+.nuclear-supply div ul li {
+  margin-bottom: 10px;
+  list-style:inside ;
+}
+
+.nuclear-transport {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: #ebeef1;
+  width: 100%;
+  color: #25282c;
+  padding-block: 40px;
+}
+
+.nuclear-transport h2 {
+  font-weight: 900;
+  font-size: 28px;
+  color: #3f4245;
+  background: transparent;
+}
+
+.nuclear-transport div {
+  padding: 0 20px;
+}
+
+.nuclear-transport div div {
+  padding-block: 20px;
+  padding-inline: 10%;
+  width: 100%;
+}
+
+.nuclear-transport div div h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #3f4244;
+}
+
+@media (max-width: 850px) {
+  .nuclear-supply {
+    flex-direction: column;
+  }
+
+  .nuclear-transport {
+    flex-direction: column;
+    padding-inline: 5%;
   }
 }
