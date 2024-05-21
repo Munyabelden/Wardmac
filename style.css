@@ -16,7 +16,7 @@
 .text-gray { color: #2b2e34; }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .sr-only {
@@ -198,7 +198,7 @@ h2 {
   width: 190px;
   height: auto;
   margin-block: 15px;
-  margin-inline: 10%;
+  margin-inline: 5%;
 }
 
 nav {
@@ -221,6 +221,7 @@ nav span p {
   background: linear-gradient(to right, rgb(14, 10, 10), rgb(122, 60, 59), rgb(239, 53, 53));
   padding-block: 80px 0;
   z-index: 100;
+  padding-inline: 5%;
 }
 
 .menu-items {
@@ -279,7 +280,7 @@ nav span p {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   nav {
@@ -625,6 +626,10 @@ footer {
   section.address {
     flex-direction: column;
   }
+
+  .footer-p {
+    width: 85%;
+  }
 }
 
 /* Services */
@@ -734,10 +739,25 @@ footer {
 @media (max-width: 850px) {
   .nuclear-supply {
     flex-direction: column;
+    height: 90vh;
+  }
+
+  .nuclear-supply img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .nuclear-supply div {
+    width: 100%;
+    padding-inline: 10%;
   }
 
   .nuclear-transport {
     flex-direction: column;
     padding-inline: 5%;
+  }
+
+  .partner img {
+    width: 120px;
   }
 }
