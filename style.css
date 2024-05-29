@@ -201,7 +201,20 @@ h2 {
   margin-inline: 5%;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   background: linear-gradient(to right, rgb(14, 10, 10), rgb(122, 60, 59), rgb(239, 53, 53));
   padding-inline: 5%;
 }
@@ -411,18 +424,18 @@ main {
 }
 
 .swiper-container {
-  width: 120%;
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 300px;
   text-align: center;
-  margin-inline: 20px;
 }
 
 img {
