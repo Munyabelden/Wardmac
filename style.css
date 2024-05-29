@@ -16,7 +16,7 @@
 .text-gray { color: #2b2e34; }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .sr-only {
