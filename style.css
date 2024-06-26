@@ -735,7 +735,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background: #ebeef1;
+  background: #f5f8fa;
   width: 100%;
   color: #25282c;
   padding-block: 40px;
